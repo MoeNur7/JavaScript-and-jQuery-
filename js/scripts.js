@@ -3,6 +3,13 @@ $(document).ready(function(){
     event.preventDefault(); 
     const selectedCoding =$(this).attr("href");
     console.log(selectedCoding);
+
+      $("#display-ruby").hide();
+      $("#display-javaScripts").hide();
+      $("#display-python").hide();
+      $("#display-empty-form").hide();
+
+
     if (selectedCoding === "Ruby")
     {
         $("div.JavaScripts").hide();
